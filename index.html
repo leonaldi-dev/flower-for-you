@@ -195,7 +195,9 @@
     </div>
     <button class="decrypt-button" id="decryptButton">Buka Kunci</button>
     <pre id="menuNormal" class="hidden" aria-hidden="true">
-
+        // GAMBAR BUNGA DI SINI
+        // Baris-baris di bawah ini adalah ASCII art bunga + emoji 🌸🌷🌺 di akhir
+        // Kalau mau ganti gambar bunga, edit baris-baris ini (hati-hati biar format ASCII art gak rusak)
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⢠⠿⠷⣭⣶⣯⣥⣶⣾⣿⠀⠀⠀⠀⢠⠖⣒⡒⢢⣄⡴⠒⢢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⢸⠷⣾⣿⡀⢠⡿⠑⠀⠀⢸⣿⡿⡄⠀⠀⠀⢸⢼⣍⠙⠛⠙⢷⡀⠀⣷⠒⠈⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -241,7 +243,7 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣜⡟⡇⢻⡆⠀⠀⠀⠀⠏⡄⠀⠘⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⠃⡇⠀⣿⠀⣀⠀⠀⠸⠃⠀⠀⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠏⠀⠃⠀⢸⡇⢸⠀⠀⠀⢀⠀⠀⠸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀🌸🌷🌺
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡾⠛⠦⣀⣀⠀⠀⡇⠈⡇⠀⠀⠈⡀⠀⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀I LOVE UUU⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡾⠛⠦⣀⣀⠀⠀⡇⠈⡇⠀⠀⠈⡀⠀⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀I LOVEEE UUU⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠚⠋⠀⠀⠀⠈⢸⠀⠀⢹⠀⢣⢀⡀⠤⠒⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -309,7 +311,7 @@
             this.setupScrollManagement();
             this.setupButtonListener();
             
-            setTimeout(() => this.displayTerminal(), 1000); // Percepat dari 2000ms ke 1000ms
+            setTimeout(() => this.displayTerminal(), 300); // Super cepat untuk HP low-end: dari 1000ms ke 300ms
         }
 
         setupScrollManagement() {
@@ -461,7 +463,7 @@
 
             setTimeout(() => {
                 this.displayCharacter(menuText, currentIndex, decryptedText);
-            }, 5); // Percepat dari 10ms ke 5ms
+            }, 2); // Super cepat untuk HP low-end: dari 5ms ke 2ms
         }
 
         autoScrollIfNeeded() {
@@ -496,7 +498,7 @@
             
             setTimeout(() => {
                 this.typePrompt(baseText, promptText, currentIndex + 1);
-            }, 30); // Percepat dari 50ms ke 30ms
+            }, 15); // Super cepat untuk HP low-end: dari 30ms ke 15ms
         }
 
         setupDecryptionListener() {
@@ -515,7 +517,7 @@
 
         randomizeText() {
             let randomizeCount = 0;
-            const maxRandomizations = 50; // Kurangi dari 100 ke 50
+            const maxRandomizations = 20; // Super cepat untuk HP low-end: dari 50 ke 20
             
             const randomizeInterval = setInterval(() => {
                 if (randomizeCount >= maxRandomizations) {
@@ -526,14 +528,14 @@
                 
                 this.menuElement.textContent = this.encryptText(this.originalText);
                 randomizeCount++;
-            }, 5); // Percepat dari 10ms ke 5ms
+            }, 2); // Super cepat untuk HP low-end: dari 5ms ke 2ms
 
             this.intervals.push(randomizeInterval);
 
             setTimeout(() => {
                 clearInterval(randomizeInterval);
                 this.startDecryption();
-            }, 500); // Percepat dari 1000ms ke 500ms
+            }, 200); // Super cepat untuk HP low-end: dari 500ms ke 200ms
         }
 
         startDecryption() {
@@ -576,7 +578,7 @@
                 }
 
                 if (currentText !== this.originalText) {
-                    setTimeout(decryptChar, isArtRevealed ? 4 : 1); // Percepat dari 8ms/2ms ke 4ms/1ms
+                    setTimeout(decryptChar, isArtRevealed ? 2 : 0.5); // Super cepat untuk HP low-end: dari 4ms/1ms ke 2ms/0.5ms
                 }
             };
 
@@ -589,7 +591,7 @@
                     top: document.documentElement.scrollHeight,
                     behavior: 'smooth'
                 });
-            }, 250); // Percepat dari 500ms ke 250ms
+            }, 100); // Super cepat untuk HP low-end: dari 250ms ke 100ms
         }
 
         displayTerminal() {
